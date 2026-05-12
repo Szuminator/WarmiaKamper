@@ -412,3 +412,39 @@ img {
   }
 
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .call-button {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    padding: 30px;
+    transition: 0.3s;
+    gap: 20px;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+}
