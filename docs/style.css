@@ -29,6 +29,12 @@ img {
   padding: 100px 0;
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
 .section-label {
   color: #3f6a52;
   font-weight: 600;
@@ -365,4 +371,20 @@ img {
 
 .faq-item {
   max-width: 600px;
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
 }
