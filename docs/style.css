@@ -429,7 +429,20 @@ img {
 
   .menu-toggle {
     display: block;
+    z-index: 1001;
   }
+
+  .menu-toggle {
+  color: #1f1f1f;
+}
+
+.menu-toggle {
+  transition: 0.2s;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
 
   .nav-links {
     position: fixed;
@@ -437,10 +450,15 @@ img {
     left: -100%;
     width: 100%;
     background: white;
+
+    display: flex;
     flex-direction: column;
+
     padding: 30px;
     transition: 0.3s;
     gap: 20px;
+
+    z-index: 1000;
   }
 
   .nav-links.active {
@@ -448,3 +466,4 @@ img {
   }
 
 }
+
