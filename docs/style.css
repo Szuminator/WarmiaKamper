@@ -427,17 +427,14 @@ img {
     display: none;
   }
 
-  .menu-toggle {
-    display: block;
-    z-index: 1001;
-  }
-
-  .menu-toggle {
-  color: #1f1f1f;
-}
-
-.menu-toggle {
-  transition: 0.2s;
+ .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2000;
 }
 
 .menu-toggle:hover {
