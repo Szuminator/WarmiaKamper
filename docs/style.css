@@ -419,6 +419,7 @@ img {
   border: none;
   font-size: 32px;
   cursor: pointer;
+  color: #1f1f1f;
 }
 
 @media (max-width: 768px) {
@@ -427,32 +428,34 @@ img {
     display: none;
   }
 
- .menu-toggle {
-  display: block;
-  background: none;
-  border: none;
-  font-size: 32px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2000;
-}
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 2000;
+    color: #1f1f1f;
+  }
 
-.menu-toggle:hover {
-  transform: scale(1.1);
-}
+  .menu-toggle:hover {
+    transform: scale(1.1);
+  }
 
   .nav-links {
     position: fixed;
     top: 80px;
     left: -100%;
+
     width: 100%;
+    height: calc(100vh - 80px);
+
     background: white;
 
     display: flex;
     flex-direction: column;
 
     padding: 30px;
-    transition: 0.3s;
+
+    transition: left 0.3s ease;
+
     gap: 20px;
 
     z-index: 1000;
@@ -463,4 +466,3 @@ img {
   }
 
 }
-
