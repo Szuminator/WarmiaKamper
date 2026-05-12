@@ -308,10 +308,6 @@ img {
     display: none;
   }
 
-  .section {
-    padding: 80px 0;
-  }
-
   .hero-buttons {
     flex-direction: column;
   }
@@ -404,6 +400,15 @@ img {
 
   p {
     margin-bottom: 12px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+    padding: 140px 0 80px;
   }
 
 }
