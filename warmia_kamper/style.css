@@ -26,7 +26,15 @@ img {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 32px 0;
+  }
+
 }
 
 .section-label {
@@ -300,10 +308,6 @@ img {
     display: none;
   }
 
-  .section {
-    padding: 80px 0;
-  }
-
   .hero-buttons {
     flex-direction: column;
   }
@@ -365,4 +369,100 @@ img {
 
 .faq-item {
   max-width: 600px;
+}
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-header {
+    margin-bottom: 24px;
+  }
+
+  .faq-grid,
+  .gallery-grid,
+  .pricing-grid {
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: auto;
+    padding: 140px 0 80px;
+  }
+
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #1f1f1f;
+}
+
+@media (max-width: 768px) {
+
+  .call-button {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 2000;
+    color: #1f1f1f;
+  }
+
+  .menu-toggle:hover {
+    transform: scale(1.1);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    transition: left 0.3s ease;
+
+    gap: 20px;
+
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
 }
