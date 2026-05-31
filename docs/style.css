@@ -72,6 +72,15 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+/*
+.nav {
+  height: auto;
+  min-height: 100px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}*/
 
 .logo-wrapper {
   display: flex;
@@ -79,10 +88,25 @@ img {
 }
 
 .logo {
-  height: 52px;
+
+  height: 150px;
   width: auto;
+  transform: translateY(40px);
 }
 
+@media (max-width: 768px) {
+  .logo {
+    height: 52px;
+    transform: none;
+  }
+}
+/*
+.logo {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+*/
 .nav-links {
   display: flex;
   gap: 28px;
@@ -465,4 +489,57 @@ img {
     left: 0;
   }
 
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  opacity: 0.7;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    display: flex;
+    position: absolute;
+    right: 60px; /* obok hamburgera */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.hero-image{
+  transition: opacity .6s ease;
 }
